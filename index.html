@@ -4,6 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Status Alertrack</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Status Alertrack</h1>
+    </header>
+
+    <div class="page">
+      <section class="header-box">
+        <div class="header-content">
+          <img src="/assets/headerCheck.png" alt="icone de check v" />
+          <div class="header-text">
+            <h3>Todo o serviço operacional</h3>
+            <p>Último incidente 5 dias atrás</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="charts">
+        <div class="whasAppChart"></div>
+        <div class="pizzaChart"></div>
+        <div class="servicesChart"></div>
+        <div class="servicesActivityTime"></div>
+      </section>
+
+      <p>Últimos Incidentes</p>
+
+      <section>
+        <div class="incidents">
+          <div class="container">
+            <h2>02 de Agosto 2020</h2>
+            <div class="content">
+              <img src="/assets/incidentCheck.png" alt="icone de check v" />
+              <p>Solução</p>
+              <p>
+                Gerador atenderá como backup em casos semelhantes, garantindo
+                assim, a continuidade por períodos maiores que 23 horas.
+              </p>
+              <span>4 horas atrás </span>
+            </div>
+            <div class="content">
+              <img src="/assets/incidentEye.png" alt="icone de olho" />
+              <p>Problema sendo monitorado</p>
+              <p>Aquisição de nova unidade de GERADOR DE ENERGIA A DIESEL.</p>
+              <span>8 horas atrás </span>
+            </div>
+
+            <div class="content">
+              <img src="/assets/incidentI.png" alt="icone de I" />
+              <p>Incidente Energético</p>
+              <p>
+                Devido a incidentes naturais houvera a presença da falta de
+                energia na região por tempo não previsto, fazendo com que hajam
+                paradas do fornecimento de energia de forma segura, o que faz
+                com que a cada período de 23horas seja obrigatório o reinício
+                das atividades dos serviços prestados. Isto ocorre diante ao
+                fato de que o gerador disponibilizado pela ALERTRACK possui
+                coeficiência de até 20 Horas de disponibilidade do fornecimento
+                contínuo, somados à disponibilização por parte de armazenamento
+                de energia, menos o tempo necessário para o desligamento dos
+                servidores
+              </p>
+              <span>10 horas atrás </span>
+            </div>
+          </div>
+
+          <div class="container">
+            <h2>31 de Junho 2020</h2>
+            <div class="content">
+              <img src="/assets/incidentCheck.png" alt="icone de check v" />
+              <p>Solução</p>
+              <p>WhatsApp voltou a operar normalmente.</p>
+              <span>4 horas atrás </span>
+            </div>
+            <div class="content">
+              <img src="/assets/incidentEye.png" alt="icone de olho" />
+              <p>Problema sendo monitorado</p>
+              <p>O serviço está sendo restaurado para alguns países.</p>
+              <span>8 horas atrás </span>
+            </div>
+
+            <div class="content">
+              <img src="/assets/incidentI.png" alt="icone de I" />
+              <p>WhatsApp Interrumpido</p>
+              <p>
+                O WhatsApp está passando por uma interrupção geral em todo o
+                mundo. Não é possível usar o serviço porque o servidor está fora
+                do ar.
+              </p>
+              <span>10 horas atrás </span>
+            </div>
+          </div>
+
+          <div class="container">
+            <h2>30 de Junho 2020</h2>
+            <div class="content">
+              <p>Sem incidentes para este dia</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
