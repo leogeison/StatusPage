@@ -14,14 +14,32 @@ body {
   background: #f8fafb;
 }
 
-header {
+body::before {
+  content: '';
+  width: 100%;
   height: 15.8rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
   background: #43425d;
 }
 
+.page {
+  max-width: 91.3rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  height: 15.8rem;
+}
 
 header h1 {
   color: #ffffff;
+  padding-block: 3.4rem 2.6rem;
 }
 
 .header-text h3 {
@@ -59,16 +77,12 @@ header h1 {
   height: 3.8rem;
 }
 
-main {
-  max-width: 90.4rem;
-  margin-inline: auto;
-}
 main .title {
   font-size: 1.8rem;
   line-height: 1.3rem;
   text-align: left;
   color: #4d4f5c;
-  margin: 7.5rem 0 2.8rem
+  margin: 7.5rem 0 2.8rem;
 }
 
 section {
@@ -91,11 +105,16 @@ section img {
   box-shadow: 0px 2px 3px rgba(67, 66, 93, 0.11);
 }
 #pizzaChart {
+  width: 515px;
+  height: auto;
+
+  height: auto;
   box-shadow: 0px 2px 3px rgba(67, 66, 93, 0.11);
 }
 .alignChart {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 2.2rem;
   margin-block: 2.8rem;
 }
@@ -128,8 +147,8 @@ section img {
 .serviceInfo img:hover {
   filter: brightness(0.9);
 }
- .serviceInfo .tooltip {
-  bottom: 25%; 
+.serviceInfo .tooltip {
+  bottom: 25%;
   left: 125%;
 }
 
@@ -164,9 +183,9 @@ section img {
 }
 
 #servicesActivityTime p {
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 2rem;
   font-style: normal;
   text-align: left;
   color: #4d4f5c;
@@ -175,13 +194,13 @@ section img {
 
 #bars {
   display: flex;
-  padding-inline: 3.6rem;
+  padding-inline: 3rem;
 }
 
 .bar {
   width: 2rem;
   height: 10rem; /* Altura das barras */
-  margin-right: 5px;
+  margin-right: 0.5rem;
   position: relative;
 }
 .tooltip {
@@ -191,8 +210,8 @@ section img {
   filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
   color: #4d4f5c;
   text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
+  padding: 0.5rem 0;
+  border-radius: 0.6rem;
   position: absolute;
   z-index: 1;
   bottom: 125%; /* Posição do tooltip em relação à barra */
@@ -253,4 +272,11 @@ section img {
 .incidents .container {
   border-bottom: 1px solid #f1f1f3;
   padding: 3rem 3rem 0;
+}
+.incidents .container h2 {
+  font-size: 1.4rem;
+  line-height: 1.3rem;
+  font-style: normal;
+  text-align: left;
+  color: #4d4f5c;
 }

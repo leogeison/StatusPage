@@ -14,207 +14,214 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Status Alertrack</h1>
-    </header>
+    <div class="page">
+      <header>
+        <h1>Status Alertrack</h1>
+      </header>
 
-    <main>
-      <section class="header-box">
-        <div class="header-content">
-          <img src="/assets/headerCheck.png" alt="icone de check v" />
-          <div class="header-text">
-            <h3>Todo o serviço operacional</h3>
-            <p>Último incidente 5 dias atrás</p>
+      <main>
+        <section class="header-box">
+          <div class="header-content">
+            <img src="/assets/headerCheck.png" alt="icone de check v" />
+            <div class="header-text">
+              <h3>Todo o serviço operacional</h3>
+              <p>Último incidente 5 dias atrás</p>
+            </div>
           </div>
+        </section>
+
+        <section class="charts">
+          <div id="whasAppChart"></div>
+
+          <div class="alignChart">
+            <div id="pizzaChart"></div>
+
+            <div class="servicesChart">
+              <h1>Serviços</h1>
+
+              <div class="serviceInfo">
+                <p>SacDigital</p>
+                <img src="/assets/serviceCheck.png" alt="icone check v" />
+                <span class="tooltip">Operando</span>
+              </div>
+              <div class="serviceInfo">
+                <p>Panfleto.Online</p>
+                <img src="/assets/serviceCheck.png" alt="icone check v" />
+                <span class="tooltip">Operando</span>
+              </div>
+              <div class="serviceInfo">
+                <p>SMSIdeal</p>
+                <img
+                  src="/assets/serviceConfig.png"
+                  alt="icone de uma catraca"
+                />
+                <span class="tooltip">Em Manutenção</span>
+              </div>
+              <div class="serviceInfo">
+                <p>ConsultaIdeal</p>
+                <img src="/assets/serviceAtencion.png" alt="icone de atenção" />
+                <span class="tooltip">Oscilando</span>
+              </div>
+              <div class="serviceInfo">
+                <p>Whattsap</p>
+                <img src="/assets/serviceCheck.png" alt="icone check v" />
+                <span class="tooltip">Operando</span>
+              </div>
+              <div class="serviceInfo">
+                <p>WhattsApp Bussiness API</p>
+                <img src="/assets/serviceCheck.png" alt="icone check v" />
+                <span class="tooltip">Operando</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="servicesActivityTime">
+            <h1>Tempo de Atividades dos Serviços</h1>
+
+            <div id="bars">
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar yellow">
+                <span class="tooltip">Incidente Energético</span>
+              </div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar yellow">
+                <span class="tooltip">Incidente Energético</span>
+              </div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+
+              <div class="bar red">
+                <span class="tooltip">WhatsApp Interrompido</span>
+              </div>
+              <div class="bar red">
+                <span class="tooltip">WhatsApp Interrompido</span>
+              </div>
+              <div class="bar yellow">
+                <span class="tooltip">Incidente Energético</span>
+              </div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar yellow">
+                <span class="tooltip">Incidente Energético</span>
+              </div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+              <div class="bar green"></div>
+            </div>
+
+            <p>90 dias atras</p>
+          </div>
+        </section>
+
+        <div class="title">
+          <p>Últimos Incidentes</p>
         </div>
-      </section>
 
-      <section class="charts">
-        <div id="whasAppChart"></div>
-
-        <div class="alignChart">
-
-          <div id="pizzaChart"></div>
-  
-          <div class="servicesChart">
-            <h1>Serviços</h1>
-  
-            <div class="serviceInfo">
-              <p>SacDigital</p>
-              <img src="/assets/serviceCheck.png" alt="icone check v" />
-              <span class="tooltip">Operando</span>
-            </div>
-            <div class="serviceInfo">
-              <p>Panfleto.Online</p>
-              <img src="/assets/serviceCheck.png" alt="icone check v" />
-              <span class="tooltip">Operando</span>
-            </div>
-            <div class="serviceInfo">
-              <p>SMSIdeal</p>
-              <img src="/assets/serviceConfig.png" alt="icone de uma catraca" />
-              <span class="tooltip">Em Manutenção</span>
-            </div>
-            <div class="serviceInfo">
-              <p>ConsultaIdeal</p>
-              <img src="/assets/serviceAtencion.png" alt="icone de atenção" />
-              <span class="tooltip">Oscilando</span>
-            </div>
-            <div class="serviceInfo">
-              <p>Whattsap</p>
-              <img src="/assets/serviceCheck.png" alt="icone check v" />
-              <span class="tooltip">Operando</span>
-            </div>
-            <div class="serviceInfo">
-              <p>WhattsApp Bussiness API</p>
-              <img src="/assets/serviceCheck.png" alt="icone check v" />
-              <span class="tooltip">Operando</span>
-            </div>
-          </div>
-        </div>
-
-
-        <div id="servicesActivityTime">
-          <h1>Tempo de Atividades dos Serviços</h1>
-
-          <div id="bars">
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar yellow">
-              <span class="tooltip">Incidente Energético</span>
-            </div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar yellow">
-              <span class="tooltip">Incidente Energético</span>
-            </div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-
-            <div class="bar red">
-              <span class="tooltip">WhatsApp Interrompido</span>
-            </div>
-            <div class="bar red">
-              <span class="tooltip">WhatsApp Interrompido</span>
-            </div>
-            <div class="bar yellow">
-              <span class="tooltip">Incidente Energético</span>
-            </div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar yellow">
-              <span class="tooltip">Incidente Energético</span>
-            </div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-            <div class="bar green"></div>
-          </div>
-
-          <p>90 dias atras</p>
-        </div>
-      </section>
-
-      <div class="title">
-        <p>Últimos Incidentes</p>
-        
-      </div>
-
-      <section>
-        <div class="incidents">
-          <div class="container">
-            <h2>02 de Agosto 2020</h2>
-            <div class="content">
-              <img src="/assets/incidentCheck.png" alt="icone de check v" />
-              <div class="content-text">
-                <p>Solução</p>
-                <p>
-                  Gerador atenderá como backup em casos semelhantes, garantindo
-                  assim, a continuidade por períodos maiores que 23 horas.
-                </p>
-                <span>4 horas atrás </span>
+        <section>
+          <div class="incidents">
+            <div class="container">
+              <h2>02 de Agosto 2020</h2>
+              <div class="content">
+                <img src="/assets/incidentCheck.png" alt="icone de check v" />
+                <div class="content-text">
+                  <p>Solução</p>
+                  <p>
+                    Gerador atenderá como backup em casos semelhantes,
+                    garantindo assim, a continuidade por períodos maiores que 23
+                    horas.
+                  </p>
+                  <span>4 horas atrás </span>
+                </div>
               </div>
-            </div>
-            <div class="content">
-              <img src="/assets/incidentEye.png" alt="icone de olho" />
-              <div class="content-text">
-                <p>Problema sendo monitorado</p>
-                <p>Aquisição de nova unidade de GERADOR DE ENERGIA A DIESEL.</p>
-                <span>8 horas atrás </span>
+              <div class="content">
+                <img src="/assets/incidentEye.png" alt="icone de olho" />
+                <div class="content-text">
+                  <p>Problema sendo monitorado</p>
+                  <p>
+                    Aquisição de nova unidade de GERADOR DE ENERGIA A DIESEL.
+                  </p>
+                  <span>8 horas atrás </span>
+                </div>
+              </div>
+
+              <div class="content">
+                <img src="/assets/incidentI.png" alt="icone de I" />
+                <div class="content-text">
+                  <p>Incidente Energético</p>
+                  <p>
+                    Devido a incidentes naturais houvera a presença da falta de
+                    energia na região por tempo não previsto, fazendo com que
+                    hajam paradas do fornecimento de energia de forma segura, o
+                    que faz com que a cada período de 23horas seja obrigatório o
+                    reinício das atividades dos serviços prestados. Isto ocorre
+                    diante ao fato de que o gerador disponibilizado pela
+                    ALERTRACK possui coeficiência de até 20 Horas de
+                    disponibilidade do fornecimento contínuo, somados à
+                    disponibilização por parte de armazenamento de energia,
+                    menos o tempo necessário para o desligamento dos servidores
+                  </p>
+                  <span>10 horas atrás </span>
+                </div>
               </div>
             </div>
 
-            <div class="content">
-              <img src="/assets/incidentI.png" alt="icone de I" />
-              <div class="content-text">
-                <p>Incidente Energético</p>
-                <p>
-                  Devido a incidentes naturais houvera a presença da falta de
-                  energia na região por tempo não previsto, fazendo com que
-                  hajam paradas do fornecimento de energia de forma segura, o
-                  que faz com que a cada período de 23horas seja obrigatório o
-                  reinício das atividades dos serviços prestados. Isto ocorre
-                  diante ao fato de que o gerador disponibilizado pela ALERTRACK
-                  possui coeficiência de até 20 Horas de disponibilidade do
-                  fornecimento contínuo, somados à disponibilização por parte de
-                  armazenamento de energia, menos o tempo necessário para o
-                  desligamento dos servidores
-                </p>
-                <span>10 horas atrás </span>
+            <div class="container">
+              <h2>31 de Junho 2020</h2>
+              <div class="content">
+                <img src="/assets/incidentCheck.png" alt="icone de check v" />
+                <div class="content-text">
+                  <p>Solução</p>
+                  <p>WhatsApp voltou a operar normalmente.</p>
+                  <span>4 horas atrás </span>
+                </div>
+              </div>
+              <div class="content">
+                <img src="/assets/incidentEye.png" alt="icone de olho" />
+                <div class="content-text">
+                  <p>Problema sendo monitorado</p>
+                  <p>O serviço está sendo restaurado para alguns países.</p>
+                  <span>8 horas atrás </span>
+                </div>
+              </div>
+
+              <div class="content">
+                <img src="/assets/incidentI.png" alt="icone de I" />
+                <div class="content-text">
+                  <p>WhatsApp Interrumpido</p>
+                  <p>
+                    O WhatsApp está passando por uma interrupção geral em todo o
+                    mundo. Não é possível usar o serviço porque o servidor está
+                    fora do ar.
+                  </p>
+                  <span>10 horas atrás </span>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="container">
-            <h2>31 de Junho 2020</h2>
-            <div class="content">
-              <img src="/assets/incidentCheck.png" alt="icone de check v" />
-              <div class="content-text">
-                <p>Solução</p>
-                <p>WhatsApp voltou a operar normalmente.</p>
-                <span>4 horas atrás </span>
-              </div>
-            </div>
-            <div class="content">
-              <img src="/assets/incidentEye.png" alt="icone de olho" />
-              <div class="content-text">
-                <p>Problema sendo monitorado</p>
-                <p>O serviço está sendo restaurado para alguns países.</p>
-                <span>8 horas atrás </span>
-              </div>
-            </div>
-
-            <div class="content">
-              <img src="/assets/incidentI.png" alt="icone de I" />
-              <div class="content-text">
-                <p>WhatsApp Interrumpido</p>
-                <p>
-                  O WhatsApp está passando por uma interrupção geral em todo o
-                  mundo. Não é possível usar o serviço porque o servidor está
-                  fora do ar.
-                </p>
-                <span>10 horas atrás </span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
 
     <script src="main.js"></script>
   </body>
