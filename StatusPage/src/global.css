@@ -5,7 +5,22 @@
 }
 :root {
   font-size: 62.5%;
+
+  --white:#ffffff;
+  
+  --gray-100:#F8FAFB ;
+  --gray-200: #F1F1F3;
+  --gray-300: #4D4F5C;
+  --gray-400: #43425D;
+  --gray-500: #2F2E50;
+
+  --yellow: #FFDA83;
+  --green: #4AD991;
+  --red: #FF215D;
+  
 }
+
 body {
   font-size: 1.6rem;
 }
+
