@@ -1,0 +1,65 @@
+.servicesChart {
+  width: 37.8rem;
+  height: 40rem;
+  padding: 2rem;
+  background: var(--white);
+  box-shadow: 0px 2px 3px rgba(67, 66, 93, 0.11);
+}
+
+.alignChart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.2rem;
+  margin-block: 2.8rem;
+}
+
+.servicesChart h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: left;
+  color: var(--gray-500);
+}
+
+.serviceInfo {
+  font-family: 'Roboto-Regular';
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--gray-300);
+  padding-block: 1.7rem;
+  border-bottom: 1px solid var(--gray-200);
+  position: relative; /* Adicionado */
+}
+
+.serviceInfo:last-child {
+  border-bottom: none;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 12rem;
+  background-color: var(--white);
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));
+  color: var(--gray-300);
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 0.6rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Posição do tooltip em relação à barra */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.serviceInfo:hover svg {
+  filter: brightness(0.8);
+}
+
+.serviceInfo svg:hover + .tooltip {
+  visibility: visible;
+}
+.serviceInfo .tooltip {
+  bottom: 25%;
+  left: 125%;
+}
