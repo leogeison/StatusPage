@@ -1,10 +1,12 @@
+ 
 import { useEffect } from 'react';
 import Highcharts from 'highcharts';
 export function PizzaChart() {
   useEffect(() => {
     Highcharts.chart('pizzaChart', {
       chart: {
-        type: 'pie'
+        type: 'pie', 
+       
       },
       title: {
         text: 'Brasil',
@@ -73,4 +75,4 @@ export function PizzaChart() {
     });
   }, []); // Executar apenas uma vez após a montagem do componente
 
-}
+} 

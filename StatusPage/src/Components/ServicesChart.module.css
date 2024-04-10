@@ -1,18 +1,12 @@
 .servicesChart {
-  width: 37.8rem;
+  width: 50%;
   height: 40rem;
   padding: 2rem;
   background: var(--white);
-  box-shadow: 0px 2px 3px rgba(67, 66, 93, 0.11);
+  filter: drop-shadow(0px 2px 3px rgba(67,66,93,0.11 ))
 }
 
-.alignChart {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2.2rem;
-  margin-block: 2.8rem;
-}
+
 
 .servicesChart h1 {
   font-size: 2rem;
@@ -48,7 +42,7 @@
   border-radius: 0.6rem;
   position: absolute;
   z-index: 1;
-  bottom: 125%; /* Posição do tooltip em relação à barra */
+  bottom: 25%; /* Posição do tooltip em relação à barra */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -60,6 +54,16 @@
   visibility: visible;
 }
 .serviceInfo .tooltip {
-  bottom: 25%;
-  left: 125%;
+  bottom: 35%;
+  left: 75%;
 }
+
+@media (max-width: 768px) {
+  .servicesChart {
+    width: 100%;
+  }
+
+
+}
+
+

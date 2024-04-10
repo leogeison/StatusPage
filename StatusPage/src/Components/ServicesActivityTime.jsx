@@ -60,7 +60,7 @@ export function ServiceActivityTime() {
           </div>
         ))}
       </div>
-      <p>90 dias atrás</p>
+      <span>90 dias atrás</span>
     </div>
   );
 }
