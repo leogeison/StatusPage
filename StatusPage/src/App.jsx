@@ -1,11 +1,11 @@
 import { CheckCircle, Info, Eye } from 'phosphor-react';
 import styles from './App.module.css';
-import { Header } from './Components/Header';
-import { WhatsAppChart } from './Components/WhatsAppChart';
-import { PizzaChart } from './Components/PizzaChart';
+import { Header } from './Components/Header/Header';
+import { WhatsAppChart } from './Components/WhatsAppChart/WhatsAppChart';
+import { PizzaChart } from './Components/PizzaChart/PizzaChart';
 import './global.css';
-import { ServicesChart } from './Components/ServicesChart';
-import { ServiceActivityTime } from './Components/ServicesActivityTime';
+import { ServicesChart } from './Components/ServiceChart/ServicesChart';
+import { ServiceActivityTime } from './Components/ServicesActivityTime/ServicesActivityTime';
 
 export function App() {
   return (
