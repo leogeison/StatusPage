@@ -1,5 +1,4 @@
-![Imagem da pagina](![Logo do GitHub](./src/assets/)
-)
+![StausAlertrack](https://github.com/leogeison/StatusPage/assets/99031160/389be233-adc6-4cc9-9c62-d2cbf0f6185f)
 
 # Landpage de Incidentes e Disponibilidade de Produtos
 
