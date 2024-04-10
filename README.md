@@ -1,4 +1,4 @@
-![Imagem da pagina](![Logo do GitHub](https://github.com/username/repositoryname/blob/main/image.png)
+![Imagem da pagina](![Logo do GitHub](./src/assets/)
 )
 
 # Landpage de Incidentes e Disponibilidade de Produtos
