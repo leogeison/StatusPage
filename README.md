@@ -1,3 +1,6 @@
+![Imagem da pagina](![Logo do GitHub](https://github.com/username/repositoryname/blob/main/image.png)
+)
+
 # Landpage de Incidentes e Disponibilidade de Produtos
 
 ## Sobre o Projeto
