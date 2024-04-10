@@ -1,8 +1,43 @@
-# React + Vite
+# Landpage de Incidentes e Disponibilidade de Produtos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre o Projeto
 
-Currently, two official plugins are available:
+Este projeto consiste em uma landpage desenvolvida em React usando Vite, com o objetivo de registrar incidentes, exibir status e mostrar a disponibilidade dos produtos comercializados pela empresa.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Layout
+
+O layout da landpage segue as diretrizes definidas pela empresa, garantindo uma experiência visual coesa e agradável para os usuários.
+
+## Tecnologias Utilizadas
+
+- React
+
+## Pré-Requisitos
+
+- Node.js e npm (ou yarn) instalados na sua máquina.
+
+## Instalação
+
+1. Clone o projeto:
+    ```
+    $ git clone https://github.com/leogeison/statusPage
+    ```
+
+2. Acesse a pasta do projeto:
+    ```
+    $ cd statusPage
+    ```
+
+3. Instale as dependências:
+    ```
+    $ npm install
+    ```
+
+4. Inicie o servidor:
+    ```
+    $ npm run dev
+    ```
+
+## License
+
+Este projeto está licenciado sob a Licença MIT
